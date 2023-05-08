@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(image/Mosque.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Almarai', sans-serif;
+    direction: rtl;
+}
+.container{
+    position: relative;
+}
+.layer_overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 80px;
+}
+.sections{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+
+}
+.sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.666%;
+    height: 100vh;
+}
+/* background img sec  */
+.sec1{
+    background-image: url(image/الفجر.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec2{
+    background-image: url(image/الشروق.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec3{
+    background-image: url(image/الظهر.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec4{
+    background-image: url(image/العصر.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec5{
+    background-image: url(image/المغرب.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec6{
+    background-image: url(image/العشاء.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* title sec and date  */
+.center_info{
+    background-color: rgba(255, 255, 255, 0.615);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 5%;
+    text-align: center;
+    height: max-content;
+    width: max-content;
+    transition: all.2s;
+    z-index: 10;
+}
+.center_info:hover{
+    transform: scale(1.06);
+}
+.center_info .title{
+    font-size:22px ;
+    font-weight:600;
+    margin: 10% 0;
+}
+.center_info .date{
+    font-size:19px ;
+    font-weight:500;
+    margin: 1% 0;
+}
+/* setting */
+.icon_setting{
+    position: fixed;
+    bottom: 10px;
+    right:10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    padding: .5%;
+    border-radius: 15%;
+    width: 50px;
+    transition: all .2s;
+}
+.icon_setting:hover{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.icon_setting img{
+    width: 100%;
+}
+.settings_info{
+    background-image: url(image/texttuar.jpg);
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    display: block;
+    transition: all .2s;
+
+}
+.animationForSetting{
+    animation: settingDown ease-in-out 1s;
+}
+@keyframes settingDown {
+  
+   100%{
+        opacity: 0;
+        display:none;
+    }
+  }
+.exit{
+    text-align: left;
+    display: inline;
+    margin:0%;
+    position: absolute;
+    top:2%;
+    left:4%;
+    font-size: 20px;
+    user-select: none;
+}
+
+.sett1 h3 ,.sett2 h3{
+    margin-bottom:5%;
+    font-size: 26px;
+    font-weight: 800;
+}
+.sett1 select,.sett2 select{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.date_now{
+    position: fixed;
+    bottom: 10px;
+    left:10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    padding: .5%;
+    text-align: left;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    transition: all .2s;
+
+}
+#date{
+    display: none;
+}
+.date_now:hover{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.date_now h4 ,.date_now p{
+    font-size: 18px;
+    font-weight: 500;
+}
